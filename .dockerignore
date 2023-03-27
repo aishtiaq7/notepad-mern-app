@@ -1,0 +1,32 @@
+# Ignore Node.js modules
+node_modules
+
+# Ignore client-side build artifacts
+/client/build
+
+# Ignore environment-specific files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore npm debug logs
+npm-debug.log*
+
+# Ignore Visual Studio Code files
+.vscode
+
+# Ignore Git files and directories
+.git
+.gitignore
+
+# Ignore Docker-specific files
+.dockerignore
+Dockerfile
+docker-compose.yml
+
+# Ignore any other unnecessary files or directories
+*.log
+*.swp
+*.swo
