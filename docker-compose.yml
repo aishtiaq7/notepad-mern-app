@@ -2,16 +2,16 @@ version: "2"
 services:
     client:
         container_name: client
-        build: ./client
+        image: awshafishtiaque/notepadapp:0.0.3
         restart: always
         ports:
             - "3000:3000"
-        working_dir: /client/src/app
-        volumes:
-            - ./client:/client/src/app
-        entrypoint: ["npm", "start"]
-        links:
-            - api
+        # working_dir: /client/src/app
+        # volumes:
+        #     - ./client:/client/src/app
+        # entrypoint: ["npm", "start"]
+        # links:
+        #     - api
         networks:
             - webappnetwork
     api:
