@@ -16,7 +16,7 @@ services:
             - webappnetwork
     api:
         container_name: api
-        build: ./api
+        image: awshafishtiaque/notepad-mern:0.0.2
         restart: always
         ports:
             - "9000:9000"

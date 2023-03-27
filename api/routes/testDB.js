@@ -10,7 +10,7 @@ router.get("/", function(req, res, next) {
     res.send(databaseConnection);
 });
 
-const uri = process.env.MONGO_URI
+const uri = 'mongodb+srv://new-user-01:dbpass123@cluster0.hxneqft.mongodb.net/?retryWrites=true&w=majority'
 
 // Connecting to MongoDB
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
