@@ -2,7 +2,7 @@ version: "2"
 services:
     client:
         container_name: client
-        image: awshafishtiaque/notepadapp:0.0.3
+        image: awshafishtiaque/notepadapp:1.0.0
         restart: always
         ports:
             - "3000:3000"
@@ -10,7 +10,7 @@ services:
             - webappnetwork
     api:
         container_name: api
-        image: awshafishtiaque/notepad-mern:0.0.2
+        image: awshafishtiaque/notepad-mern:1.0.0
         restart: always
         ports:
             - "9000:9000"
