@@ -6,12 +6,6 @@ services:
         restart: always
         ports:
             - "3000:3000"
-        # working_dir: /client/src/app
-        # volumes:
-        #     - ./client:/client/src/app
-        # entrypoint: ["npm", "start"]
-        # links:
-        #     - api
         networks:
             - webappnetwork
     api:
@@ -20,9 +14,7 @@ services:
         restart: always
         ports:
             - "9000:9000"
-        volumes:
-            - ./api:/api
-            - /api/node_modules
+        command: npm start
         depends_on:
             - mongodb
         networks:
